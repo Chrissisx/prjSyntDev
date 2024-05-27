@@ -1,7 +1,7 @@
 public class App {
     public static void main(String[] args) throws Exception {
         
-        //Declarar'¿
+        //Declarar
         //Instanciar
         System.out.println("*********************************");
         System.out.println("*                               *");
