@@ -5,15 +5,15 @@
  * @version 1.0
  */
 
-public class ChristopherCriolloSC7 {
-    public void SerieCaracter7For(int ccPosicion){
+public class ChristopherCriolloSC8 {
+    public void SerieCaracter8For(int ccPosicion){
         char letra = 'a';
-        int contador = 0;
+        int contador = 0; 
 
-        System.out.println("\nSERIE CARACTER 7");
+        System.out.println("\nSERIE CARACTER 8");
         System.out.println("\nFor: ");
 
-        for (int i = 2; contador < ccPosicion; i+=2) {
+        for (int i = 1; contador < ccPosicion; i+=2) {
             for (int j = 0; j < i; j++) {
                 System.out.print(letra);
             }
@@ -23,10 +23,10 @@ public class ChristopherCriolloSC7 {
         }
     }
 
-    public void SerieCaracter7doWhile(int ccPosicion){
+    public void SerieCaracter8doWhile(int ccPosicion){
         char letra = 'a';
         int contador = 0;
-        int i = 2;
+        int i = 1;
         
         System.out.println("\nDo While: ");
 
@@ -43,10 +43,10 @@ public class ChristopherCriolloSC7 {
         } while (contador < ccPosicion);
     }
 
-    public void SerieCaracter7While(int ccPosicion){
+    public void SerieCaracter8While(int ccPosicion){
         char letra = 'a';
         int contador = 0;
-        int i = 2;
+        int i = 1;
 
         System.out.println("\nWhile: ");
 
