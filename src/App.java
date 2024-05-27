@@ -3,8 +3,9 @@ import java.util.Scanner;
 public class App {
     public static void main(String[] args) throws Exception {
         
-        //Declarar
+        //Declarar e instanciar
         ChristopherCriolloSN12 oCCSN12 = new ChristopherCriolloSN12();
+        ChristopherCriolloSC7 occSC7 = new ChristopherCriolloSC7();
 
 
         Scanner sc = new Scanner(System.in);
@@ -25,6 +26,11 @@ public class App {
         System.out.println();
         oCCSN12.SerieNumerica12While(numeroPos);
         System.out.println();
+        occSC7.SerieCaracter7For(numeroPos);
+        System.out.println();
+        occSC7.SerieCaracter7doWhile(numeroPos);
+        System.out.println();
+        occSC7.SerieCaracter7While(numeroPos);
 
     }
 }
