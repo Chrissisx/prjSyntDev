@@ -43,7 +43,6 @@ public class ChristopherCriolloF7 {
     public void Figura7While(int ccNivel) {
         String grada = "|___";
     
-        System.out.println("\nFIGURA 7");
         System.out.println("\nWhile: ");
     
         int i = 0;
