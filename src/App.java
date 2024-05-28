@@ -11,6 +11,13 @@ public class App {
         ChristopherCriolloF13 oCCF13 = new ChristopherCriolloF13();
         ChristopherCriolloF18 oCCF18 = new ChristopherCriolloF18();
         ChristopherCriolloF19 oCCF19 = new ChristopherCriolloF19();
+        EstefanoCondoySN7 oECSN7 = new EstefanoCondoySN7();
+        EstefanoCondoySN8 oECSN8 = new EstefanoCondoySN8();
+        EstefanoCondoyF8  oECF8 = new EstefanoCondoyF8();
+        EstefanoCondoyF12 oECF12 =new EstefanoCondoyF12();
+        EstefanoCondoyF14 oECF14 = new EstefanoCondoyF14();
+        EstefanCondoyF15 oECF15 =new EstefanCondoyF15();
+        EstefanoCondoyF17 oECF17 = new EstefanoCondoyF17();
 
 
         Scanner sc = new Scanner(System.in);
@@ -28,6 +35,12 @@ public class App {
         // Metodo
 
         //**************************SERIE NUMERICA**************************
+        //SN7
+        System.out.println();
+        oECSN7.SerieNumerica7(numeroPos);
+        //SN8
+        System.out.println();
+        oECSN8.SerieNumerica8(numeroPos);
         //SN12
         System.out.println();
         oCCSN12.SerieNumerica12For(numeroPos);
@@ -58,12 +71,27 @@ public class App {
         System.out.println();
         oCCF7.Figura7While(numeroPos);
         System.out.println();
+        //F8
+        oECF8.Figura8(numeroPos);
+        System.out.println();
+        //F12
+        oECF12.Figura12(numeroPos);
+        System.out.println();
         //F13
         oCCF13.Figura13For(numeroPos);
         System.out.println();
         oCCF13.Figura13doWhile(numeroPos);
         System.out.println();
         oCCF13.Figura13While(numeroPos);
+        //F14
+        oECF14.Figura14(numeroPos);
+        System.out.println();
+        //F15
+        oECF15.Figura15(numeroPos);
+        System.out.println();
+        //F17
+        oECF17.Figura17(numeroPos);
+        System.out.println();
         //F18
         oCCF18.Figura18For(numeroPos);
         System.out.println();
