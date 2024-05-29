@@ -6,36 +6,8 @@
  */
 
 public class ChristopherCriolloF13 {
-    public void Figura13For(int ccNivel){
-
-        System.out.println("\nFIGURA 13");
-        System.out.println("\nFor: ");
-        
-        for (int i = 1; i <= ccNivel; i++) {
-            for (int j = 1; j <= i; j++) {
-                System.out.print(j);    
-            }
-            System.out.println();
-        }
-    }
     
-    public void Figura13doWhile(int ccNivel){
-        
-        System.out.println("\nDo While: ");
-        
-        int i = 1;
-        do{
-            int j = 1; 
-            do {
-                System.out.print(j);
-                j++; 
-            } while (j <= i);
-            System.out.println();
-            i++;
-        } while (i <= ccNivel);
-    }
-    
-    public void Figura13While(int ccNivel){
+    public void Figura13(int ccNivel){
         
         System.out.println("\nWhile: ");
         

@@ -6,7 +6,7 @@
  */
 
 public class ChristopherCriolloF7 {
-    public void Figura7For(int ccNivel){
+    public void Figura7(int ccNivel){
         String grada = "|___";
 
         System.out.println("\nFIGURA 7");
@@ -17,43 +17,6 @@ public class ChristopherCriolloF7 {
                 System.out.print("     ");
             }
             System.out.println(grada);
-        }
-    }
-
-    public void Figura7doWhile(int ccNivel) {
-        String grada = "|___";
-    
-        System.out.println("\nDo While: ");
-    
-        int i = 0;
-        do {
-            int j = 0;
-            do {
-                if (j < i) {
-                    System.out.print("     ");
-                }
-                j++;
-            } while (j < i);
-    
-            System.out.println(grada);
-            i++;
-        } while (i < ccNivel);
-    }
-
-    public void Figura7While(int ccNivel) {
-        String grada = "|___";
-    
-        System.out.println("\nWhile: ");
-    
-        int i = 0;
-        while (i < ccNivel) {
-            int j = 0;
-            while (j < i) {
-                System.out.print("     ");
-                j++;
-            }
-            System.out.println(grada);
-            i++;
         }
     }
 }

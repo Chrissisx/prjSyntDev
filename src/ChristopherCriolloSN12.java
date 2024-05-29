@@ -6,7 +6,7 @@
  */
 
 public class ChristopherCriolloSN12 {
-    public void SerieNumerica12For(int ccPosicion){
+    public void SerieNumerica12(int ccPosicion){
         int inicio = 2; 
         int x = 4; 
 
@@ -18,36 +18,6 @@ public class ChristopherCriolloSN12 {
             System.out.print(" ");
             inicio+=x;
             x+=2;
-        }
-    }
-
-    public void SerieNumerica12doWhile (int ccPosicion){
-        int inicio = 2; 
-        int x = 4;
-        int i = 1;
-        
-        System.out.println("\nDo While: ");
-        do {
-            System.out.print(inicio);
-            System.out.print(" ");
-            inicio+=x;
-            x+=2;
-            i++;
-        } while (i <= ccPosicion);
-    }
-
-    public void SerieNumerica12While (int ccPosicion){
-        int inicio = 2;
-        int x = 4;
-        int i = 1;
-
-        System.out.println("\nWhile: ");
-        while (i <= ccPosicion) {
-            System.out.print(inicio);
-            System.out.print(" ");
-            inicio+=x;
-            x+=2;
-            i++;
         }
     }
 }
