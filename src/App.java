@@ -18,6 +18,15 @@ public class App {
         EstefanoCondoyF14 oECF14 = new EstefanoCondoyF14();
         EstefanCondoyF15 oECF15 =new EstefanCondoyF15();
         EstefanoCondoyF17 oECF17 = new EstefanoCondoyF17();
+        CamilaCaicedoSN1 oCCSN1 = new CamilaCaicedoSN1();
+        CamilaCaicedoSN2 oCCSN2 = new CamilaCaicedoSN2();
+        CamilaCaicedoSN3 oCCSN3 = new CamilaCaicedoSN3();
+        CamilaCaicedoSN4 oCCN4 = new CamilaCaicedoSN4();
+        CamilaCaicedoSC9 oCCSC9 = new CamilaCaicedoSC9();
+        CamilaCaicedoSC10 oCCSC10 = new CamilaCaicedoSC10();
+        CamilaCaicedoF1 oCCF1 = new CamilaCaicedoF1();
+        CamilaCaicedoF10 oCCF10 = new CamilaCaicedoF10();
+        CamilaCaicedoF11 oCCF11 = new CamilaCaicedoF11();
 
 
         Scanner sc = new Scanner(System.in);
@@ -35,6 +44,18 @@ public class App {
         // Metodo
 
         //**************************SERIE NUMERICA**************************
+        //SN1
+        System.out.println();
+        oCCSN1.ccSN1(numeroPos);
+        //SN2
+        System.out.println();
+        oCCSN2.ccSN2(numeroPos);
+        //SN3
+        System.out.println();
+        oCCSN3.ccSN3(numeroPos);
+        //SN4
+        System.out.println();
+        oCCN4.ccSN4(numeroPos);
         //SN7
         System.out.println();
         oECSN7.SerieNumerica7(numeroPos);
@@ -52,12 +73,27 @@ public class App {
         //SC8
         oCCSC8.SerieCaracter8(numeroPos);
         System.out.println();
+        //SC9
+        oCCSC9.ccSC9(numeroPos);
+        System.out.println();
+        //SC10
+        oCCSC10.ccSC10(numeroPos);
+        System.out.println();
         //******************************FIGURAS******************************
+        //F1
+        oCCF1.ccF1(numeroPos);
+        System.out.println();
         //F7
         oCCF7.Figura7(numeroPos);
         System.out.println();
         //F8
         oECF8.Figura8(numeroPos);
+        System.out.println();
+        //F10
+        oCCF10.ccF10(numeroPos);
+        System.out.println();
+        //F11
+        oCCF11.ccF11(numeroPos);
         System.out.println();
         //F12
         oECF12.Figura12(numeroPos);
