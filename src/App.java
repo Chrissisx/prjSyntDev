@@ -19,6 +19,7 @@ public class App {
         EstefanoCondoyF14 oECF14 = new EstefanoCondoyF14();
         EstefanCondoyF15 oECF15 =new EstefanCondoyF15();
         EstefanoCondoyF17 oECF17 = new EstefanoCondoyF17();
+        //EstefanoCondoyC02 oECC02 =new EstefanoCondoyC02();
 
         CamilaCaicedoSN1 oCCSN1 = new CamilaCaicedoSN1();
         CamilaCaicedoSN2 oCCSN2 = new CamilaCaicedoSN2();
@@ -50,7 +51,8 @@ public class App {
         System.out.println("\n*********************************");
         System.out.print("Ingrese un numero: ");
         int numeroPos = sc.nextInt();
-        
+
+
 
         // Metodo
 
@@ -152,7 +154,8 @@ public class App {
         //F19
         oCCF19.Figura19(numeroPos);
         System.out.println();
-
+        //**************************CADENA DE CARACTERES**************************
         sc.close();
     }
+
 }
