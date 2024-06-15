@@ -1,10 +1,4 @@
 import java.util.Scanner;
-/**
- * Poliretos
- * Array 1
- * @author ChristopherCriollo
- * @version 1.0
- */
 
 public class ChristopherCriolloA01 {
     public void array01() {
