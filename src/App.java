@@ -220,16 +220,16 @@ public class App {
         oECC06.cadena6(fraseoriginal);
         System.out.println();
         //C07
-        // oCCC07.Cadena07();
-        // System.out.println();
+         oCCC07.Cadena07();
+        System.out.println();
 
         // //******************************ARRAYS*******************************
-        // //A01
-        // oCCA01.array01();
-        // System.out.println();
-        // //A02
-        // ChristopherCriolloA02.array02();
-        // System.out.println();
+        //A01
+        oCCA01.array01();
+        System.out.println();
+        //A02
+        ChristopherCriolloA02.array02();
+        System.out.println();
         //A03
         System.out.print("ARRAY 3 ) Ingrese su nombre completo: ");
         String name = sc.nextLine();
