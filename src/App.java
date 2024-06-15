@@ -22,6 +22,7 @@ public class App {
         EstefanoCondoyF14 oECF14 = new EstefanoCondoyF14();
         EstefanCondoyF15 oECF15 =new EstefanCondoyF15();
         EstefanoCondoyF17 oECF17 = new EstefanoCondoyF17();
+        //EstefanoCondoyC02 oECC02 =new EstefanoCondoyC02();
 
         CamilaCaicedoSN1 oCCSN1 = new CamilaCaicedoSN1();
         CamilaCaicedoSN2 oCCSN2 = new CamilaCaicedoSN2();
@@ -42,6 +43,17 @@ public class App {
         JairoAnguloF5 oJAF5 = new JairoAnguloF5();
         JairoAnguloF9 oJAF9 = new JairoAnguloF9();
 
+        JoanBedonF16 oJBF16 = new JoanBedonF16();
+        JoanBedonF6 oJBF6 = new JoanBedonF6();
+        JoanBedonSC1 oJBSC1 = new JoanBedonSC1();
+        JoanBedonSC2 oJBSC2 = new JoanBedonSC2();
+        JoanBedonF3 oJBF3 = new JoanBedonF3();
+        JoanBedonSC5 oJBSC5 = new JoanBedonSC5();
+        JoanBedonSC6 oJBSC6 = new JoanBedonSC6();
+        JoanBedonSN9 oJBSN9 = new JoanBedonSN9();
+        JoanBedonSN10 oJBSN10 = new JoanBedonSN10();
+
+
 
         Scanner sc = new Scanner(System.in);
         System.out.println("*********************************");
@@ -53,7 +65,8 @@ public class App {
         System.out.println("\n*********************************");
         System.out.print("Ingrese un numero: ");
         int numeroPos = sc.nextInt();
-        
+
+
 
         // Metodo
 
@@ -83,16 +96,34 @@ public class App {
         //SN8
         System.out.println();
         oECSN8.SerieNumerica8(numeroPos);
+        //SN9
+        System.out.println();
+        oJBSN9.SerieNumerica9(numeroPos);
+        //SN10
+        System.out.println();
+        oJBSN10.SerieNumerica10(numeroPos);
         //SN12
         System.out.println();
         oCCSN12.SerieNumerica12(numeroPos);
         System.out.println();    
         //**************************SERIE CARATERES**************************
+        //SC1
+        oJBSC1.SerieCaractere1For(numeroPos);
+        System.out.println();
+        //SC2
+        oJBSC2.SerieCaractere2For(numeroPos);
+        System.out.println();
         //SC3
         oJASC3.SerieCaractere3For(numeroPos);
         System.out.println();
         //SC4
         oJASC4.SerieCaractere4For(numeroPos);
+        System.out.println();
+        //SC5
+        oJBSC5.SerieCaractere5For(numeroPos);
+        System.out.println();
+        //SC6
+        oJBSC6.SerieCaractere6For(numeroPos);
         System.out.println();
         //SC7
         oCCSC7.SerieCaracter7(numeroPos);
@@ -113,11 +144,17 @@ public class App {
         //F2
         oJAF2.Figura2For(numeroPos);
         System.out.println();
+        //F3
+        oJBF3.Figura3For(numeroPos);
+        System.out.println();
         //F4
         oJAF4.Figura4For(numeroPos);
         System.out.println();
         //F5
         oJAF5.Figura5For(numeroPos);
+        System.out.println();
+        //F6
+        oJBF6.Figura6For(numeroPos);
         System.out.println();
         //F7
         oCCF7.Figura7(numeroPos);
@@ -145,6 +182,9 @@ public class App {
         System.out.println();
         //F15
         oECF15.Figura15(numeroPos);
+        System.out.println();
+        //F16
+        oJBF16.Figura16(numeroPos);
         System.out.println();
         //F17
         oECF17.Figura17(numeroPos);

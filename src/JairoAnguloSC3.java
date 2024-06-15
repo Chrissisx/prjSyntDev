@@ -15,6 +15,4 @@ public class JairoAnguloSC3 {
         }
         System.out.println();
     }
-    
-    
 }
