@@ -220,7 +220,7 @@ public class App {
         oECC06.cadena6(fraseoriginal);
         System.out.println();
         //C07
-         oCCC07.Cadena07();
+         //oCCC07.Cadena07();
         System.out.println();
 
         // //******************************ARRAYS*******************************
