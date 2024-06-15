@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 public class App {
@@ -11,8 +12,9 @@ public class App {
         ChristopherCriolloF13 oCCF13   = new ChristopherCriolloF13();
         ChristopherCriolloF18 oCCF18   = new ChristopherCriolloF18();
         ChristopherCriolloF19 oCCF19   = new ChristopherCriolloF19();
-        // ChristopherCriolloC7 oCCC07    = new ChristopherCriolloC7();
+        ChristopherCriolloC7 oCCC07    = new ChristopherCriolloC7();
         ChristopherCriolloA01 oCCA01   = new ChristopherCriolloA01();
+        ChristopherCriolloA02 oCCA02   = new ChristopherCriolloA02();
         ChristopherCriolloL06 oCCL06   = new ChristopherCriolloL06();
         ChristopherCriolloL07 oCCL07   = new ChristopherCriolloL07();
 
@@ -247,15 +249,20 @@ public class App {
         oECC06.cadena6(fraseoriginal);
         System.out.println();
         //C07
-         //oCCC07.Cadena07();
+        System.out.print("[ Cad. 7 ] - Ingresa una palabra y eliminare la \"J\": ");
+        String palabraJ = reader.nextLine();
+        oCCC07.caracter07(palabraJ);
         System.out.println();
-
         // //******************************ARRAYS*******************************
         //A01
         oCCA01.array01();
         System.out.println();
         //A02
-        ChristopherCriolloA02.array02();
+        System.out.print(" Array. 2 ) - Ingresa el tamaño de la matriz: ");
+        int tamano = reader.nextInt();
+        System.out.print("Ingresa el caracter que deseas usar: ");
+        char caracter = reader.next().charAt(0);
+        oCCA02.array02(tamano,caracter);
         System.out.println();
         //A03
         System.out.print("ARRAY 3 ) Ingrese su nombre completo: ");
@@ -265,29 +272,13 @@ public class App {
         //A05
         oCCA05.ccA05();
         System.out.println();
-        //******************************LOADING*******************************
-<<<<<<< HEAD
-        //L02
-        System.out.println("(Loading. 2) Barra de carga con caracter: ");
-        System.out.print("Ingresa un caracter: ");
-        char caracter = reader.next().charAt(0);
-        oJBLoading02.hashtagbarra(caracter);
-        System.out.println();
-        //L03
-        System.out.print("(Loading. 3)  Ingrese un carácter:");
-        reader.nextLine();
-        String simbolo = reader.nextLine();
-        oJBLoading03.mov(simbolo);
-        System.out.println("\n");
-=======
-        
+        //******************************LOADING*******************************     
         //L01
         oCCL01.ccL01();
         System.out.println();
         //L04
         oCCL04.ccL04();
         System.out.println();
->>>>>>> bcf746c55d92bafa58bf44fe8b102a3288ee6321
         //L06
         oCCL06.loading06();
         System.out.println();

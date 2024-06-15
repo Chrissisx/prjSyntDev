@@ -1,6 +1,12 @@
 import java.util.Scanner;
+/**
+ * Poliretos
+ * Ejercicio Array 
+ * @author ChristopherCriollo
+ * @version 2.0
+ */
 
-public class ChristopherCriolloA01 {
+ public class ChristopherCriolloA01 {
     public void array01() {
         Scanner array1 = new Scanner(System.in);
 
