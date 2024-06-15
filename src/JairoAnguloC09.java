@@ -1,8 +1,11 @@
+import java.util.Scanner;
+
 public class JairoAnguloC09 {
 
     public void AlternarMayusculasMinusculas() {
+        Scanner reader = new Scanner(System.in);
             System.out.print("Ingresa una frase: ");
-            String frase = App.scanner.nextLine();
+            String frase = reader.nextLine();
             String resultado = alternarLetras(frase);
             System.out.println("Frase alternada: " + resultado);
 

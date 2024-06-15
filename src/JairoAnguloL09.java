@@ -1,3 +1,4 @@
+import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
 public class JairoAnguloL09 {
@@ -6,9 +7,10 @@ public class JairoAnguloL09 {
     private int progreso;
 
     public JairoAnguloL09() {
+        Scanner reader = new Scanner(System.in);
         // Solicitar el nombre completo al usuario
         System.out.print("Ingrese su nombre completo: ");
-        this.nombreCompleto = App.scanner.nextLine();
+        this.nombreCompleto = reader.nextLine();
         
 
         this.longitud = nombreCompleto.length();
