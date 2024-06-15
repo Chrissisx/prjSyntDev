@@ -1,5 +1,6 @@
 import java.util.Scanner;
 public class App {
+    static Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) throws Exception {
         
         //Declarar e instanciar
@@ -42,6 +43,12 @@ public class App {
         JairoAnguloF2 oJAF2 = new JairoAnguloF2();
         JairoAnguloF5 oJAF5 = new JairoAnguloF5();
         JairoAnguloF9 oJAF9 = new JairoAnguloF9();
+        JairoAnguloC08 oJAC08 = new JairoAnguloC08();
+        JairoAnguloC09 oJAC09 = new JairoAnguloC09();
+        JairoAnguloL05 oJAL05 = new JairoAnguloL05();
+        JairoAnguloL09 oJAL09 = new JairoAnguloL09();
+        JairoAnguloL12 oJAL12 = new JairoAnguloL12();
+        JairoAnguloA04 oJAA04 = new JairoAnguloA04();
 
         JoanBedonF16 oJBF16 = new JoanBedonF16();
         JoanBedonF6 oJBF6 = new JoanBedonF6();
@@ -199,6 +206,10 @@ public class App {
         //C07
         // oCCC07.Cadena07();
         System.out.println();
+        //C08
+        oJAC08.Anagramas();
+        //C09
+        oJAC09.AlternarMayusculasMinusculas();
 
         //******************************ARRAYS*******************************
         //A01
@@ -207,13 +218,21 @@ public class App {
         //A02
         ChristopherCriolloA02.array02();
         System.out.println();
+        //A04
+        oJAA04.nombreMatriz("Jairo", "Angulo");
         //******************************LOADING*******************************
+        //L05
+        oJAL05.BarraPorciento();
         //L06
         oCCL06.loading06();
         System.out.println();
         //L07
         oCCL07.loading07();
         System.out.println();
+        //L09
+        oJAL09.mostrarProgreso();
+        //L12
+        oJAL12.desplazarDerechaYRegresar();
         
         sc.close();
     }
