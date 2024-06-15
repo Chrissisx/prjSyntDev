@@ -10,7 +10,8 @@ public class ChristopherCriolloL07 {
         char[] puntaFlecha = {'\\', '|', '/', '-'};
         int indicePunta = 0;
         
-        System.out.println("\n[ Loading. 7 ]");
+        System.out.println("\n LOADING. 7: ");
+        System.out.println();
         String[] figuras = {
            "[" + new String(new char[longitudBarra]).replace('\0', ' ') + "] 0%"
         };

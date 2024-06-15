@@ -6,7 +6,7 @@
  */
 public class ChristopherCriolloL06 {
     public void loading06() {
-        System.out.println("\n[ Loading. 6 ]:");
+        System.out.println("\nLOADING. 6 :");
         System.out.println();
         int espaciosAdelante = 20, espaciosAtras = 0;
         for (int i = 0; i <= 90;i+=10) {

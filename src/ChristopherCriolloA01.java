@@ -10,6 +10,8 @@ public class ChristopherCriolloA01 {
     public void array01() {
         Scanner array1 = new Scanner(System.in);
 
+        System.out.println("\nARRAY 01: ");
+        System.out.println();
         for (int i = 0; i < 4; i++) {
             System.out.print("Ingrese el nombre " + (i + 1) + ": ");
             String nombre = array1.nextLine();

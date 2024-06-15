@@ -9,6 +9,7 @@ import java.util.Scanner;
 
 public class ChristopherCriolloC7 {
     public void Cadena07(){
+        System.out.println("\n CADENA CARACTER 7: ");
         Scanner cadena7 = new Scanner(System.in);
 
         System.out.println("Ingrese una frase o palabra con la letra J");
