@@ -286,6 +286,9 @@ public class App {
         oCCA05.ccA05();
         System.out.println();
         //******************************LOADING*******************************
+        //L01
+        oCCL01.ccL01();
+        System.out.println();
         //L02
         System.out.println("(Loading. 2) Barra de carga con caracter: ");
         System.out.print("Ingresa un caracter: ");
@@ -298,14 +301,11 @@ public class App {
         String simbolo = reader.nextLine();
         oJBLoading03.mov(simbolo);
         System.out.println("\n");
-        //L01
-        oCCL01.ccL01();
-        System.out.println();
         //L04
         oCCL04.ccL04();
         System.out.println();
-         //l05
-         oJAL05.BarraPorciento();
+        //l05
+        oJAL05.BarraPorciento();
         //L06
         oCCL06.loading06();
         System.out.println();
