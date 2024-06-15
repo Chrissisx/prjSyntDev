@@ -1,3 +1,4 @@
+import java.util.Random;
 import java.util.Scanner;
 public class App {
     public static void main(String[] args) throws Exception {
@@ -22,7 +23,9 @@ public class App {
         EstefanoCondoyF14 oECF14 = new EstefanoCondoyF14();
         EstefanCondoyF15 oECF15 =new EstefanCondoyF15();
         EstefanoCondoyF17 oECF17 = new EstefanoCondoyF17();
-        //EstefanoCondoyC02 oECC02 =new EstefanoCondoyC02();
+        EstefanoCondoyA03 oArray3 = new EstefanoCondoyA03();
+        EstefanoCondoyC02 oECC02 =new EstefanoCondoyC02();
+        EstefanoCondoyC06 oECC06 = new EstefanoCondoyC06();
 
         CamilaCaicedoSN1 oCCSN1 = new CamilaCaicedoSN1();
         CamilaCaicedoSN2 oCCSN2 = new CamilaCaicedoSN2();
@@ -196,17 +199,43 @@ public class App {
         oCCF19.Figura19(numeroPos);
         System.out.println();
         //*************************CADENA CARACTERES*************************
+        //C02
+        System.out.print("CADENA 2) Ingresa una palabra: ");
+        sc.nextLine();
+        String palabraIngresada = sc.nextLine();
+        oECC02.cadena2(palabraIngresada);
+        System.out.println();
+        //C03
+        EstefanoCondoyC03 oCadena3 = new EstefanoCondoyC03();
+        System.out.println("[ Cad. 3 ] - Elimina vocales de una palabra");
+        System.out.print("Ingresa una vocal: ");
+        String vocal = sc.nextLine();
+        System.out.print("Ingrese una palabra: ");
+        String palabra = sc.nextLine();
+        oCadena3.cadena3(vocal, palabra);
+        System.out.println();
+        //C06
+        System.out.print("CADENA 6) - Ingresa una frase: ");
+        String fraseoriginal = sc.nextLine();
+        oECC06.cadena6(fraseoriginal);
+        System.out.println();
         //C07
         // oCCC07.Cadena07();
-        System.out.println();
+        // System.out.println();
 
-        //******************************ARRAYS*******************************
-        //A01
-        oCCA01.array01();
+        // //******************************ARRAYS*******************************
+        // //A01
+        // oCCA01.array01();
+        // System.out.println();
+        // //A02
+        // ChristopherCriolloA02.array02();
+        // System.out.println();
+        //A03
+        System.out.print("ARRAY 3 ) Ingrese su nombre completo: ");
+        String name = sc.nextLine();
+        oArray3.array03(name);
         System.out.println();
-        //A02
-        ChristopherCriolloA02.array02();
-        System.out.println();
+        
         //******************************LOADING*******************************
         //L06
         oCCL06.loading06();
@@ -214,7 +243,23 @@ public class App {
         //L07
         oCCL07.loading07();
         System.out.println();
-        
         sc.close();
+        //L11
+        int longitud = generarLongitudAleatoria();
+        
+        System.out.println("Longitud de la señal generada: " + longitud);
+
+        // Crear una instancia de la clase que dibuja la señal
+        EstefanoCondoyL11 dibujador = new EstefanoCondoyL11();
+        
+        // Dibujar la señal
+        dibujador.dibujarSenal(longitud);
+    }
+
+    private static int generarLongitudAleatoria() {
+        Random random = new Random();
+        return random.nextInt(11);
+        
+        
     }
 }
