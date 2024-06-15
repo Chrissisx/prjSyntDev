@@ -2,7 +2,7 @@ import java.util.Random;
 import java.util.Scanner;
 public class App {
     public static void main(String[] args) throws Exception {
-        
+        Scanner reader = new Scanner(System.in);
         //Declarar e instanciar
         ChristopherCriolloSN12 oCCSN12 = new ChristopherCriolloSN12();
         ChristopherCriolloSC7 oCCSC7   = new ChristopherCriolloSC7();
@@ -55,6 +55,11 @@ public class App {
         JoanBedonSC6 oJBSC6 = new JoanBedonSC6();
         JoanBedonSN9 oJBSN9 = new JoanBedonSN9();
         JoanBedonSN10 oJBSN10 = new JoanBedonSN10();
+        JoanBedonC01 oJBCC01 = new JoanBedonC01();
+        JoanBedonC04 oJBCC04 = new JoanBedonC04();
+        JoanBedonC05 oJBCC05 = new JoanBedonC05();
+        JoanBedonL02 oJBLoading02 = new JoanBedonL02();
+        JoanBedonL03 oJBLoading03 = new JoanBedonL03();
 
 
 
@@ -199,6 +204,12 @@ public class App {
         oCCF19.Figura19(numeroPos);
         System.out.println();
         //*************************CADENA CARACTERES*************************
+        //C01
+        System.out.print("CADENA 1) Ingresa una palabra: ");
+        sc.nextLine();
+        String frase = sc.nextLine();
+        oJBCC01.cadena1(frase);
+        System.out.println();
         //C02
         System.out.print("CADENA 2) Ingresa una palabra: ");
         sc.nextLine();
@@ -213,6 +224,16 @@ public class App {
         System.out.print("Ingrese una palabra: ");
         String palabra = sc.nextLine();
         oCadena3.cadena3(vocal, palabra);
+        System.out.println();
+        //C04
+        System.out.print("( Cadena 4) Elimina las letras repetidas de la frase: ");
+        oJBCC04.cadena4();
+        System.out.println();
+        //C05
+        System.out.print("(Cadene 5) - Ingrese una frase: ");
+        String fraseaIngresar = reader.nextLine();
+        String resultado = oJBCC05.invertirFrase(frase);
+        System.out.println("Frase invertida con vocales en mayúsculas: " + resultado);
         System.out.println();
         //C06
         System.out.print("CADENA 6) - Ingresa una frase: ");
@@ -237,6 +258,18 @@ public class App {
         System.out.println();
         
         //******************************LOADING*******************************
+        //L02
+        System.out.println("(Loading. 2) Barra de carga con caracter: ");
+        System.out.print("Ingresa un caracter: ");
+        char caracter = reader.next().charAt(0);
+        oJBLoading02.hashtagbarra(caracter);
+        System.out.println();
+        //L03
+        System.out.print("(Loading. 3)  Ingrese un carácter:");
+        reader.nextLine();
+        String simbolo = reader.nextLine();
+        oJBLoading03.mov(simbolo);
+        System.out.println("\n");
         //L06
         oCCL06.loading06();
         System.out.println();
