@@ -276,7 +276,6 @@ public class App {
         //L07
         oCCL07.loading07();
         System.out.println();
-        sc.close();
         //L11
         int longitud = generarLongitudAleatoria();
         
@@ -287,6 +286,42 @@ public class App {
         
         // Dibujar la señal
         dibujador.dibujarSenal(longitud);
+
+        //******************************RECURSIÓN*******************************
+        // Obtener entrada del usuario para cada método recursivo
+        System.out.print("R01) Ingrese un número para calcular el factorial: ");
+        int nFactorial = sc.nextInt();
+        System.out.println("Factorial(" + nFactorial + "): " + EstefanoCondoyRec.factorialR01(nFactorial, new int[nFactorial + 1]));
+
+        System.out.print("R02) Ingrese el primer número para la suma: ");
+        int aSuma = sc.nextInt();
+        System.out.print("Ingrese el segundo número para la suma: ");
+        int bSuma = sc.nextInt();
+        System.out.println("Suma(" + aSuma + ", " + bSuma + "): " + EstefanoCondoyRec.sumaR02(aSuma, bSuma));
+
+        System.out.print("R03)Ingrese el primer número para la multiplicación: ");
+        int aMultiplicacion = sc.nextInt();
+        System.out.print("Ingrese el segundo número para la multiplicación: ");
+        int bMultiplicacion = sc.nextInt();
+        System.out.println("Multiplicacion(" + aMultiplicacion + ", " + bMultiplicacion + "): " + EstefanoCondoyRec.multiplicacionR03(aMultiplicacion, bMultiplicacion));
+
+        System.out.print("R04) Ingrese la base para la potencia: ");
+        int basePotencia = sc.nextInt();
+        System.out.print("Ingrese el exponente para la potencia: ");
+        int exponentePotencia = sc.nextInt();
+        System.out.println("Potencia(" + basePotencia + ", " + exponentePotencia + "): " + EstefanoCondoyRec.potenciaR04(basePotencia, exponentePotencia, new int[exponentePotencia + 1]));
+
+        System.out.print("R05)Ingrese un número para el conteo progresivo: ");
+        int nProgresivo = sc.nextInt();
+        System.out.print("Conteo Progresivo Hasta(" + nProgresivo + "): ");
+        EstefanoCondoyRec.conteoProgresivoHastaR05(nProgresivo);
+        System.out.println();
+
+        System.out.print("R06) Ingrese un número para el conteo regresivo: ");
+        int nRegresivo = sc.nextInt();
+        System.out.print("Conteo Regresivo(" + nRegresivo + "): ");
+        EstefanoCondoyRec.conteoRegresivoR06(nRegresivo);
+        sc.close();
     }
 
     private static int generarLongitudAleatoria() {
