@@ -53,6 +53,12 @@ public class App {
         JairoAnguloF2 oJAF2 = new JairoAnguloF2();
         JairoAnguloF5 oJAF5 = new JairoAnguloF5();
         JairoAnguloF9 oJAF9 = new JairoAnguloF9();
+        JairoAnguloC08 oJAC08 = new JairoAnguloC08();
+        JairoAnguloC09 oJAC09 = new JairoAnguloC09();
+        JairoAnguloL05 oJAL05 = new JairoAnguloL05();
+        JairoAnguloL09 oJAL09 = new JairoAnguloL09();
+        JairoAnguloL12 oJAL12 = new JairoAnguloL12();
+        JairoAnguloA04 oJAA04 = new JairoAnguloA04();
 
         JoanBedonF16 oJBF16 = new JoanBedonF16();
         JoanBedonF6 oJBF6 = new JoanBedonF6();
@@ -253,6 +259,11 @@ public class App {
         String palabraJ = reader.nextLine();
         oCCC07.caracter07(palabraJ);
         System.out.println();
+         //C08
+         oJAC08.Anagramas();
+         //C09
+         oJAC09.AlternarMayusculasMinusculas();
+
         // //******************************ARRAYS*******************************
         //A01
         oCCA01.array01();
@@ -269,16 +280,32 @@ public class App {
         String name = sc.nextLine();
         oArray3.array03(name);
         System.out.println();
+        //A04
+        oJAA04.nombreMatriz("Jairo", "Andres");
         //A05
         oCCA05.ccA05();
         System.out.println();
-        //******************************LOADING*******************************     
+        //******************************LOADING*******************************
+        //L02
+        System.out.println("(Loading. 2) Barra de carga con caracter: ");
+        System.out.print("Ingresa un caracter: ");
+        char caracter = reader.next().charAt(0);
+        oJBLoading02.hashtagbarra(caracter);
+        System.out.println();
+        //L03
+        System.out.print("(Loading. 3)  Ingrese un carácter:");
+        reader.nextLine();
+        String simbolo = reader.nextLine();
+        oJBLoading03.mov(simbolo);
+        System.out.println("\n");
         //L01
         oCCL01.ccL01();
         System.out.println();
         //L04
         oCCL04.ccL04();
         System.out.println();
+         //l05
+         oJAL05.BarraPorciento();
         //L06
         oCCL06.loading06();
         System.out.println();
@@ -289,6 +316,8 @@ public class App {
         String ccNombreApellido = "Camila Caicedo";
         oCCL08.ccL08(ccNombreApellido);
         System.out.println();
+        //l09
+        oJAL09.mostrarProgreso();
         //L10
         oCCL10.ccL10();
         simulator.ccL10();
@@ -303,7 +332,8 @@ public class App {
         
         // Dibujar la señal
         dibujador.dibujarSenal(longitud);
-
+        //l12
+        oJAL12.desplazarDerechaYRegresar();
         //******************************RECURSIÓN*******************************
         // Obtener entrada del usuario para cada método recursivo
         System.out.print("R01) Ingrese un número para calcular el factorial: ");

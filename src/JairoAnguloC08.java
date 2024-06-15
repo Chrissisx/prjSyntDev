@@ -1,6 +1,9 @@
+import java.util.Scanner;
+
 public class JairoAnguloC08 {
 
     public void Anagramas() {
+        Scanner reader = new Scanner(System.in);
         String[] conjunto = { "delira", "lidera", "ballena", "llenaba", "alondra", "ladrona", "España", "apañes",
                 "Enrique", "quieren" };
         int indicePalabra = (int) (Math.random() * 10);
@@ -14,7 +17,7 @@ public class JairoAnguloC08 {
         }
         for (int i = 0; i < 3; i++) {
             System.out.print("Ingresa tu anagrama: ");
-            anagrama = App.scanner.nextLine();
+            anagrama = reader.nextLine();
             if (anagramaCorrecto.equalsIgnoreCase(anagrama)) {
                 System.out.println("Bien hecho, tu anagrama es correcto");
                 break;
