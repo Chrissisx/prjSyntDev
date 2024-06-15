@@ -36,6 +36,12 @@ public class App {
         CamilaCaicedoF1 oCCF1 = new CamilaCaicedoF1();
         CamilaCaicedoF10 oCCF10 = new CamilaCaicedoF10();
         CamilaCaicedoF11 oCCF11 = new CamilaCaicedoF11();
+        CamilaCaicedoL01 oCCL01 = new CamilaCaicedoL01();
+        CamilaCaicedoL04 oCCL04 = new CamilaCaicedoL04();
+        CamilaCaicedoL08 oCCL08 = new CamilaCaicedoL08();
+        CamilaCaicedoL10 oCCL10 = new CamilaCaicedoL10();
+        CamilaCaicedoL10 simulator = new CamilaCaicedoL10();
+        CamilaCaicedoA05 oCCA05 = new CamilaCaicedoA05();
 
         JairoAnguloSN5 oJASN5 = new JairoAnguloSN5();
         JairoAnguloSN6 oJASN6 = new JairoAnguloSN6();
@@ -235,13 +241,30 @@ public class App {
         String name = sc.nextLine();
         oArray3.array03(name);
         System.out.println();
-        
+        //A05
+        oCCA05.ccA05();
+        System.out.println();
         //******************************LOADING*******************************
+        
+        //L01
+        oCCL01.ccL01();
+        System.out.println();
+        //L04
+        oCCL04.ccL04();
+        System.out.println();
         //L06
         oCCL06.loading06();
         System.out.println();
         //L07
         oCCL07.loading07();
+        System.out.println();
+        //L08
+        String ccNombreApellido = "Camila Caicedo";
+        oCCL08.ccL08(ccNombreApellido);
+        System.out.println();
+        //L10
+        oCCL10.ccL10();
+        simulator.ccL10();
         System.out.println();
         //L11
         int longitud = generarLongitudAleatoria();
