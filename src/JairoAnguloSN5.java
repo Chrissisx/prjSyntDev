@@ -1,5 +1,5 @@
 public class JairoAnguloSN5 {
-    public static void SerieNumerica5For(int num) {
+    public void SerieNumerica5For(int num) {
         System.out.println();
         System.out.println("SERIE NUMERICA 5");
         int contPrimos = 0;

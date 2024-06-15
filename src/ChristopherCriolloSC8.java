@@ -1,6 +1,6 @@
 /**
  * Poliretos
- * Serie numérica 11
+ * Serie caracter 8
  * @author ChristopherCriollo
  * @version 1.0
  */

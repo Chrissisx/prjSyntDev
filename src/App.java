@@ -1,16 +1,19 @@
 import java.util.Scanner;
-
 public class App {
     public static void main(String[] args) throws Exception {
         
         //Declarar e instanciar
         ChristopherCriolloSN12 oCCSN12 = new ChristopherCriolloSN12();
-        ChristopherCriolloSC7 oCCSC7 = new ChristopherCriolloSC7();
-        ChristopherCriolloSC8 oCCSC8 = new ChristopherCriolloSC8();
-        ChristopherCriolloF7 oCCF7 = new ChristopherCriolloF7();
-        ChristopherCriolloF13 oCCF13 = new ChristopherCriolloF13();
-        ChristopherCriolloF18 oCCF18 = new ChristopherCriolloF18();
-        ChristopherCriolloF19 oCCF19 = new ChristopherCriolloF19();
+        ChristopherCriolloSC7 oCCSC7   = new ChristopherCriolloSC7();
+        ChristopherCriolloSC8 oCCSC8   = new ChristopherCriolloSC8();
+        ChristopherCriolloF7 oCCF7     = new ChristopherCriolloF7();
+        ChristopherCriolloF13 oCCF13   = new ChristopherCriolloF13();
+        ChristopherCriolloF18 oCCF18   = new ChristopherCriolloF18();
+        ChristopherCriolloF19 oCCF19   = new ChristopherCriolloF19();
+        // ChristopherCriolloC7 oCCC07    = new ChristopherCriolloC7();
+        ChristopherCriolloA01 oCCA01   = new ChristopherCriolloA01();
+        ChristopherCriolloL06 oCCL06   = new ChristopherCriolloL06();
+        ChristopherCriolloL07 oCCL07   = new ChristopherCriolloL07();
 
         EstefanoCondoySN7 oECSN7 = new EstefanoCondoySN7();
         EstefanoCondoySN8 oECSN8 = new EstefanoCondoySN8();
@@ -152,7 +155,26 @@ public class App {
         //F19
         oCCF19.Figura19(numeroPos);
         System.out.println();
+        //*************************CADENA CARACTERES*************************
+        //C07
+        // oCCC07.Cadena07();
+        System.out.println();
 
+        //******************************ARRAYS*******************************
+        //A01
+        oCCA01.array01();
+        System.out.println();
+        //A02
+        ChristopherCriolloA02.array02();
+        System.out.println();
+        //******************************LOADING*******************************
+        //L06
+        oCCL06.loading06();
+        System.out.println();
+        //L07
+        oCCL07.loading07();
+        System.out.println();
+        
         sc.close();
     }
 }
